@@ -1,0 +1,11 @@
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/bin/Debug/netcoreapp2.0/CommandePattern.deps.json
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/bin/Debug/netcoreapp2.0/CommandePattern.runtimeconfig.json
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/bin/Debug/netcoreapp2.0/CommandePattern.runtimeconfig.dev.json
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/bin/Debug/netcoreapp2.0/CommandePattern.dll
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/bin/Debug/netcoreapp2.0/CommandePattern.pdb
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.csproj.CoreCompileInputs.cache
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.AssemblyInfoInputs.cache
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.AssemblyInfo.cs
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.dll
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.pdb
+/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/Debug/netcoreapp2.0/CommandePattern.csprojResolveAssemblyReference.cache
