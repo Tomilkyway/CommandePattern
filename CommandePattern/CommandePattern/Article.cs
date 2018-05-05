@@ -23,7 +23,7 @@ namespace CommandePattern
         }
 
 		public override string ToString() {
-            return "[Article] {id : " + id + "} \n {title : " + title + "} \n {content: " + content +"} \n\n";
+            return "[*** Article *** ] {id : " + id + "} \n {title : " + title + "} \n {content: " + content +"} \n\n";
 		}
 
 	}
