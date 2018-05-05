@@ -3197,13 +3197,13 @@
       "projectName": "CommandePattern",
       "projectPath": "/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/CommandePattern.csproj",
       "packagesPath": "/Users/thomaspainsurget/.nuget/packages/",
-      "outputPath": "/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj/",
+      "outputPath": "/Users/thomaspainsurget/Documents/ESGI/4A/Design Patterns/CommandePattern/CommandePattern/CommandePattern/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/thomaspainsurget/.nuget/NuGet/NuGet.Config"
+        "/Users/thomaspainsurget/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -3225,18 +3225,19 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.2"
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
-            "version": "[2.0.2, )"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.2"
           }
         },
         "imports": [

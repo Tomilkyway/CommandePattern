@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{3F136059-9933-49D4-823D-73CF475D3855}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommandePattern/DataBaseContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommandePattern/DBManageWithCommand.cs">
     <Files>
-      <File FileName="CommandePattern/Program.cs" Line="1" Column="1" />
-      <File FileName="CommandePattern/Article.cs" Line="8" Column="31" />
-      <File FileName="CommandePattern/DataBaseContext.cs" Line="4" Column="38" />
+      <File FileName="CommandePattern/Program.cs" Line="16" Column="2" />
+      <File FileName="CommandePattern/Article.cs" Line="12" Column="1" />
+      <File FileName="CommandePattern/DataBaseContext.cs" Line="14" Column="10" />
+      <File FileName="CommandePattern/Command.cs" Line="4" Column="28" />
+      <File FileName="CommandePattern/DBManageWithCommand.cs" Line="22" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
