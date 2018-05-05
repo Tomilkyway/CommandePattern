@@ -3,8 +3,7 @@ using System.Collections.Generic;
 
 namespace CommandePattern
 {
-    public class DBManageWithCommand
-    {
+    public class DBManageWithCommand {
         public DataBaseContext dataBaseContext = new DataBaseContext();
         public List<Command> commandList = new List<Command>();
         public int current = 0;

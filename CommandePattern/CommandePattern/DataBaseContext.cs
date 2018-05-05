@@ -8,8 +8,7 @@ namespace CommandePattern
 
         public DbSet<Article> Articles { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseSqlite("Data Source=commandePattern.db");
         }
     }
