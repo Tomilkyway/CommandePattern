@@ -8,6 +8,7 @@ namespace CommandePattern
         public List<Command> commandList = new List<Command>();
         public int current = 0;
 
+        // Redo instruction (Redo the instruction just cancelled)
         public void Redo(int levels) {
             Console.WriteLine("\n-------- Redo " + levels + " levels --------");
             for (int i = 0; i < levels; i++) {
@@ -18,6 +19,7 @@ namespace CommandePattern
             }
         }
 
+        // Undo instruction (cancel / rollback)
         public void Undo(int levels) {
             Console.WriteLine("\n-------- Undo " + levels + " levels --------");
             for (int i = 0; i < levels; i++) {
@@ -28,6 +30,7 @@ namespace CommandePattern
             }
         }
 
+        // Calculate position of command
         public void CalculateCommand(Command command) {
             command.Execute();
             commandList.Add(command);

@@ -14,6 +14,7 @@ namespace CommandePattern
             this.newArticle = newArticle;
         }
 
+        // Update an article. This function works in both ways
         public override void Execute() {
             Console.WriteLine("\n" + this + "\n");
             var temporaryArticle = new Article(article);
@@ -24,6 +25,7 @@ namespace CommandePattern
             newArticle = temporaryArticle;
         }
 
+        // Call the Execute function because it works in both ways
         public override void UnExecute() {
             Execute();
         }

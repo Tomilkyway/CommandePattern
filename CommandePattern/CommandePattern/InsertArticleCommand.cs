@@ -10,6 +10,7 @@ namespace CommandePattern
             this.article = article;
         }
 
+        // Insert and display article
         public override void Execute() {
             type = "Insert";
             dataBaseContext.Articles.Add(article);
@@ -17,6 +18,7 @@ namespace CommandePattern
             Console.WriteLine("\n" + this + "\n");
         }
 
+        // Delete and display article, which is the opposite of the instruction in the Execute() function
         public override void UnExecute() {
             type = "Delete";
             dataBaseContext.Articles.Remove(article);

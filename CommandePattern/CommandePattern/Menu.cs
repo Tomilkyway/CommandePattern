@@ -13,6 +13,7 @@ namespace CommandePattern
             this.dataBaseContext = dataBaseContext;
         }
 
+        // Display menu and allow to enter all the instructions
         public void displayMenu() {
             Console.WriteLine("\n\n******************** MENU ********************");
             Console.WriteLine("1. Display database : b (base)");
@@ -61,6 +62,7 @@ namespace CommandePattern
 
         }
 
+        // Allow to get the key pressed by the user in order to launch the instruction which corresponds to it
         public char getKeyPressed() {
             Console.Write("What do you want to do ? ");
             ConsoleKeyInfo key = Console.ReadKey();
@@ -68,6 +70,7 @@ namespace CommandePattern
             return key.KeyChar;
         }
 
+        // Foreach in the Article table in order to delete all its elements
         public void clearDatabase() {
             foreach (Article article in dataBaseContext.Articles) {
                 dataBaseContext.Articles.Remove(article);
@@ -77,11 +80,13 @@ namespace CommandePattern
             dBManageWithCommand.current = 0;
         }
 
+        // Insert an article with the DBManageWithCommand class
         public void insertArticle() {
             var article = new Article(true);
             dBManageWithCommand.CalculateCommand(new InsertArticleCommand(article));
         }
 
+        // Delete an article with the DBManageWithCommand class
         public void deleteArticle() {
             dBManageWithCommand.dataBaseContext.displayDataBase();
             Console.Write("What's the id of the article you want to delete ? ");
@@ -93,6 +98,7 @@ namespace CommandePattern
             dBManageWithCommand.CalculateCommand(new DeleteArticleCommand(article));
         }
 
+        // Update an article with the DBManageWithCommand class
         public void updateArticle() {
             dBManageWithCommand.dataBaseContext.displayDataBase();
             Console.Write("What's the id of the article you want to update ? ");
