@@ -9,9 +9,9 @@ namespace CommandePattern
         public int current = 0;
 
         public void Redo(int levels) {
-            Console.WriteLine("\n-------- Redo {0} levels --------, levels");
+            Console.WriteLine("\n-------- Redo " + levels + " levels --------");
             for (int i = 0; i < levels; i++) {
-                if (current < commandList.Count - 1) {
+                if (current < commandList.Count) {
                     Command command = commandList[current++];
                     command.Execute();
                 }
@@ -19,7 +19,7 @@ namespace CommandePattern
         }
 
         public void Undo(int levels) {
-            Console.WriteLine("\n-------- Undo {0} levels --------, levels");
+            Console.WriteLine("\n-------- Undo " + levels + " levels --------");
             for (int i = 0; i < levels; i++) {
                 if (current > 0) {
                     Command command = commandList[--current] as Command;

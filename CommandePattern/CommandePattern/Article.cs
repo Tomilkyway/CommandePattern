@@ -22,8 +22,15 @@ namespace CommandePattern
             this.content = content;
         }
 
+        public Article(Boolean boolean) {
+            Console.Write("Write a title for your new article : ");
+            this.title = Console.ReadLine();
+            Console.Write("Write a content for your new article : ");
+            this.content = Console.ReadLine();
+        }
+
 		public override string ToString() {
-            return "[*** Article *** ] {id : " + id + "} \n {title : " + title + "} \n {content: " + content +"} \n\n";
+            return "[*** Article " + id + " ***]    [title : " + title + "] [content: " + content +"]";
 		}
 
 	}

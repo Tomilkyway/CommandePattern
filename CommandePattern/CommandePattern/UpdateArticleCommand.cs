@@ -6,27 +6,16 @@ namespace CommandePattern
 
         private Article article;
         private Article newArticle;
-        private DataBaseContext dataBaseContext = new DataBaseContext();
+        private DataBaseContext dataBaseContext;
 
-        public UpdateArticleCommand(Article article, Article newArticle) {
+        public UpdateArticleCommand(Article article, Article newArticle, DataBaseContext dataBaseContext) {
+            this.dataBaseContext = dataBaseContext;
             this.article = article;
             this.newArticle = newArticle;
         }
 
-        public UpdateArticleCommand(Article article, String title = null, String content = null) {
-            this.article = article;
-            newArticle = new Article(article);
-            newArticle.id = article.id;
-            if (title != null) {
-                newArticle.title = article.title;
-            }
-            if (content != null) {
-                newArticle.content = article.content;
-            }
-        }
-
         public override void Execute() {
-            Console.WriteLine("\n [*** " + this + " ***] \n");
+            Console.WriteLine("\n" + this + "\n");
             var temporaryArticle = new Article(article);
             var dataBaseArticle = dataBaseContext.Articles.Find(article.id);
             dataBaseArticle.title = newArticle.title;

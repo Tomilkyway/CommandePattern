@@ -3,12 +3,12 @@
 namespace CommandePattern
 {
     class Program {
+        
         static void Main(string[] args) {
-            DataBaseContext dataBaseContext = new DataBaseContext();
-            Article article = new Article();
-            article.title = "First Title";
-            dataBaseContext.Articles.Add(article);
-            dataBaseContext.SaveChanges();
+            DBManageWithCommand dBManageWithCommand = new DBManageWithCommand();
+
+            Menu menu = new Menu(dBManageWithCommand, dBManageWithCommand.dataBaseContext);
+            menu.displayMenu();
         }
     }
 }
